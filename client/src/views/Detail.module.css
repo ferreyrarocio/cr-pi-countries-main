@@ -1,0 +1,88 @@
+.container{
+ border:2p solid blue;
+ flex-direction: row;
+ justify-content:space-around;
+ align-items: center;
+}
+
+.detalles{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-weight:lighter;
+  font-size: 35px;
+  color: #0b464f;
+  background-color: rgba(30, 174, 181, 0.633);
+  width:23%;
+  margin: auto;
+  backdrop-filter: blur(24px);
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: 3.5px dotted #137fc7d4;
+}
+
+.hr {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.detalles:hover {
+transform: scale(99.9%);
+backdrop-filter:blur(30px);
+}
+
+.titulo{
+  color:  #cf151e;
+  font-weight: bold;
+}
+
+.bandera{
+  width: 50%;
+  height: auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  outline: none
+}
+
+.button2{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-size: xx-large;
+  border: 2px, #af0c07;
+  padding: 8px;
+  cursor: pointer;
+  border:1.5px outset #cb253e ;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: linear-gradient(315deg, #b30e26  0%,#e85939);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  outline:none
+}
+.button2:hover{
+  border: 2px solid rgb(40, 146, 152);
+}
+
+.botonposta {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  border:3px solid rgba(40, 146, 152, 0.736);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: linear-gradient(315deg, rgba(40, 146, 152, 0.736)  0%,#a5cd4e);
+  font-family:DK Lemon Yellow Sun;
+  font-size: 37px;
+  margin-left: 2em;
+  padding: 8px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.botonposta:hover{
+  border: 3px solid rgb(57, 223, 232);
+}

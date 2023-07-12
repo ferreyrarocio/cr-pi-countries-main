@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #f2f2f200;
+  padding: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.searchbar{
+  display: flex;
+  background: rgba(255, 255, 255, 0);
+  border: 2px outset #064955c9 ;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 700px;
+  color:black;
+  margin-top: 1em;
+}
+.searchbar input{
+  font-family: Century Schoolbook;
+  font-size: 18px;
+  background:rgba(165, 29, 29, 0);
+  border: none;
+  outline: none;
+  width: 777px;
+}
+.searchbar input::placeholder { color: rgb(157, 11, 11); }
+
+.buscar{
+  background-color: #1eaeacd8 ;
+  border: 2.5px dotted #ceee2cd4;
+  padding: 12px;
+  cursor: pointer;
+  border-radius:11px;
+}
+
+.boton{
+  justify-content: center;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+.botonposta {
+  margin-top: 26px;
+
+  border:3px solid rgba(40, 146, 152, 0.736);
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: linear-gradient(315deg, rgba(40, 146, 152, 0.736)  0%,#a5cd4e);
+  font-family:DK Lemon Yellow Sun;
+  font-size: 37px;
+  margin-left: 2em;
+  padding: 6px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.botonposta:hover{
+  border: 3px solid rgb(57, 223, 232);
+}
+
+

@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 700px;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-size: 25px;
+  border-radius: 10px;
+  width: 450px;
+  background-color: #b59f71d3 ;
+  border: 3.5px dotted #137fc7d4;
+  backdrop-filter: blur(8px);
+  padding: 1em
+}
+
+.botones{
+  justify-content: center;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.button{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-size: xx-large;
+  background-image: linear-gradient(315deg, rgba(40, 146, 152, 0.736)  0%,#4ecd9c);
+  color:  white;
+  border:2px outset #258bcb ;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button2{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-size: xx-large;
+  border: 2px, #af0c07;
+  padding: 8px;
+  cursor: pointer;
+  border:1.5px outset #cb253e ;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: linear-gradient(315deg, #b30e26  0%,#e85939);
+  margin-bottom: 1em;
+}
+
+.button:hover{
+  border: 3px solid rgb(40, 146, 152);
+}
+.button2:hover{
+  border: 3px solid rgb(40, 146, 152);
+}
+
+.checkboxContainer {
+  max-height: 300px; /* Altura máxima del contenedor de los checkboxes */
+  overflow-y: auto; /* Habilitar el scroll vertical */
+  display:grid;
+  height: 250px;
+}
+
+.input {
+  font-family: Gabriola;
+  background-color: rgb(40, 146, 152);
+  color: white;
+  width: 97%;
+  padding: 8px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color:#af0c07;
+  font-size: 19px;
+  margin-top: 5px;
+  display: block;
+}
+
+.hr{
+  border-color:  rgba(18, 156, 163, 0.392);
+}
