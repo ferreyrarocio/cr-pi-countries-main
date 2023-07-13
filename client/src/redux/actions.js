@@ -16,7 +16,7 @@ export const TRACK_FILTERS_SORT = "TRACK_FILTERS_SORT";
 export const getCountries = () => {
   return async (dispatch) => {
     try {
-      const response = await axios.get("http://localhost:3001/countries");
+      const response = await axios.get("countries");
       const countries = response.data;
 
       dispatch({ type: GET_COUNTRIES, payload: countries });
@@ -30,7 +30,7 @@ export const searchCountries = (name) => {
   return async (dispatch) => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/countries/name?name=${name}`
+        `countries/name?name=${name}`
       );
       const countries = response.data;
 
@@ -44,7 +44,7 @@ export const searchCountries = (name) => {
 export const getActivities = () => {
   return async (dispatch) => {
     try {
-      const response = await axios.get("http://localhost:3001/activities");
+      const response = await axios.get("activities");
       const activities = response.data;
 
       dispatch({ type: GET_ACTIVITIES, payload: activities });
@@ -59,7 +59,7 @@ export const createActivity = (form) => {
     try {
       // Crear la actividad en la base de datos
       const response = await axios.post(
-        "http://localhost:3001/activities",
+        "activities",
         form
       );
       const createdActivity = response.data;
@@ -82,7 +82,7 @@ export const filterByActivity = (activityId, filter, countries) => {
   return async (dispatch) => {
     try {
       const response = await axios.get(
-        "http://localhost:3001/activities/activitiesCountries"
+        "activities/activitiesCountries"
       );
       const activitiesCountries = response.data;
 

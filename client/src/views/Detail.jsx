@@ -10,7 +10,7 @@ const Detail = () => {
   const [countryDetail, setCountryDetail] = useState([]);
 
   useEffect(() => {
-    axios(`http://localhost:3001/countries/${id}`).then(({ data }) => {
+    axios(`countries/${id}`).then(({ data }) => {
       data.name
         ? setCountryDetail(data)
         : window.alert("el pais no fue encontrado, probá de nuevo!");

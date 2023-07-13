@@ -6,6 +6,9 @@ import Detail from "./views/Detail";
 import Form from "./views/Form";
 import Home from "./views/Home";
 
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:3001/";
+
 const App = () => {
   return (
     <Routes>
