@@ -68,6 +68,10 @@
   display:grid;
   height: 250px;
 }
+.checkboxContainer:not(:-internal-list-box) {
+  overflow: visible !important;
+  color:red
+}
 
 .input {
   font-family: Gabriola;
@@ -81,6 +85,7 @@
   border-radius: 4px;
   margin-bottom: 10px;
 }
+
 
 .error {
   color:#af0c07;

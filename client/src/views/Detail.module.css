@@ -62,7 +62,7 @@ backdrop-filter:blur(30px);
   outline:none
 }
 .button2:hover{
-  border: 2px solid rgb(40, 146, 152);
+  border: 1.5px solid rgb(40, 146, 152);
 }
 
 .botonposta {
@@ -84,5 +84,5 @@ backdrop-filter:blur(30px);
 }
 
 .botonposta:hover{
-  border: 3px solid rgb(57, 223, 232);
+  border: 3px solid rgb(22, 170, 178);
 }

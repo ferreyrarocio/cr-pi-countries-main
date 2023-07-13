@@ -7,11 +7,9 @@
 .carta {
 	display: flex;
 	flex-direction: column;
-	border-radius: px;
 	background: linear-gradient(145deg, rgba(40, 146, 152, 0.736), #11cbd844);
-	backdrop-filter: blur(5px);
-	border-radius: 1.5em;
-	color: black;
+	backdrop-filter: blur(24px);
+	color:  #cf151e;
 	font-family: 'DK Lemon Yellow Sun', cursive;
 	font-size:22px;
 	width: 300px;
@@ -26,15 +24,19 @@
 	font-style: italic;
 	border-radius: 25px;
 	margin-top: 17px;
-	border: 2.5px dotted #137fc7d4;
+	border: 3px dotted #137fc7d4;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
+	font-family: 'DK Lemon Yellow Sun', cursive;
+	font-weight:lighter;
+	background-color: rgba(30, 174, 181, 0.337);
+	backdrop-filter: blur(24px);
 }
 
+
 .carta:hover {
-	transform: scale(101%);
-	backdrop-filter: none;
-  color: #cb253e;
+  color:rgb(4, 57, 48);
+  transform: scale(102.1%);
 }
 
 .carta img {

@@ -9,7 +9,7 @@ const Card = ({ id, name, flag, continents, population }) => {
         <Link to={`/detail/${id}`}>
           <img src={flag} alt={name} />
         </Link>
-        <p>{continents}</p>
+        <h3>{continents}</h3>
       </div>
     </div>
   );

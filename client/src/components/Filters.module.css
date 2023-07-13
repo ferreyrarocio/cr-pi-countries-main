@@ -18,18 +18,23 @@
     padding: 3px;
     margin-top: 6px;
     margin-bottom: 6px;
-    border:5px dotted rgba(34, 204, 213, 0.736);
+    border:3px dotted rgba(34, 204, 213, 0.736);
     cursor: pointer;
-    background-image: linear-gradient(315deg, #cb253e  0%, #800000 75%);
+    background-image: linear-gradient( rgb(22, 170, 178), #00807c 75%);
     font-family:DK Lemon Yellow Sun;
     font-size: xx-large;
-    background-color:rgb(157, 11, 11);
+    background-color: rgb(116, 175, 175);
     width: 97%;
     padding: 8px;
     outline: none;
     border-radius: 8px;
   }
 
-  /* .select:focus {
+  .option:hover {
+    background-color: #c57960;
+  }
+
+
+  .select:focus {
     background-color: #60c5c0;
-  } */
+  }

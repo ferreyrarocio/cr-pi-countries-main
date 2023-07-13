@@ -20,7 +20,7 @@ const CreateActivityForm = () => {
     name: "",
     difficulty: 0,
     duration: 0,
-    season: "",
+    season: "primavera",
     countries: [],
   });
 
@@ -68,7 +68,7 @@ const CreateActivityForm = () => {
       valid = false;
     }
 
-    if (form.difficulty < 1) {
+    if (form.difficulty <= 0) {
       errors.difficulty = "el rango es de 1 a 5 , siendo 5 la más complicada";
       valid = false;
     }
@@ -97,7 +97,7 @@ const CreateActivityForm = () => {
           alert(response.error);
         } else {
           await dispatch(filterByActivity(form));
-          alert("Actividad creada correctamente");
+          alert("Actividad guardada correctamente! Gracias por colaborar ♥");
 
           setForm({
             name: "",
@@ -114,10 +114,10 @@ const CreateActivityForm = () => {
         }
       } catch (error) {
         console.log(error);
-        alert("Error al crear la actividad");
+        alert("no se puede crear la actividad");
       }
     } else {
-      alert("Error en la validación de datos");
+      alert("ocurrió un error en la validación de datos");
     }
   };
 

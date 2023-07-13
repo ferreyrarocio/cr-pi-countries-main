@@ -1,22 +1,26 @@
 .title{
   font-family: 'tequila', cursive;
-  font-size: 149px;
+  font-size: 150px;
   color: #E21818;
   font-weight: lighter;
+  margin-bottom:0%;
 }
 
 .texto{
-  font-family: arial;
-  color: rgb(241, 70, 27);
-  font-size:22px;
-  margin-left: 25em;
-  margin-right: 25em;
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-weight: lighter;
+  color: #9e7d36fb ;
+  font-size:29px;
+  margin-top: 0%;
+  margin-left: 21em;
+  margin-right: 21em;
   justify-content:center
 }
 .texto2{
   font-family: 'Grayscale Signature', cursive;
   font-size: 45px;
-  color:rgb(135, 188, 191);
+  font-weight: bold;
+  color: #E21818;
 }
 
 .button{
