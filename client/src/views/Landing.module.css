@@ -14,7 +14,8 @@
   margin-top: 0%;
   margin-left: 21em;
   margin-right: 21em;
-  justify-content:center
+  justify-content:center;
+  overflow: hidden;
 }
 .texto2{
   font-family: 'Grayscale Signature', cursive;
@@ -48,4 +49,5 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 }
