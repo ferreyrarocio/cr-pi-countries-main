@@ -79,7 +79,7 @@ const Filters = () => {
           className={style.select}
           onChange={handleFilterContinent}
         >
-          <option value="">Continentes mezclados</option>
+          <option value="">MUNDIAL</option>
           <option value="North America">Norteamérica</option>
           <option value="South America">Sudamérica</option>
           <option value="Africa">África</option>
@@ -95,7 +95,7 @@ const Filters = () => {
           className={style.select}
           onChange={handleFilterActivities}
         >
-          <option value="">Actividades tipicas</option>
+          <option value="">ACTIVIDADES TÍPICAS</option>
           {activities.map((activity) => (
             <option key={activity.id} value={activity.id}>
               {activity.name}
@@ -107,14 +107,22 @@ const Filters = () => {
       <div className={style.filter}>
         <select id="sort-by" className={style.select} onChange={handleSortBy}>
           <option value="All" disabled selected>
-            Orden alfabetico:
+            POBLACIÓN:
+          </option>
+          <option value="population-+">Población de - a +</option>
+          <option value="population+-">Población de + a -</option>
+        </select>
+      </div>
+      
+      <div className={style.filter}>
+        <select id="sort-by" className={style.select} onChange={handleSortBy}>
+          <option value="All" disabled selected>
+            ORDEN ALFABÉTICO:
           </option>
           <option className={style.option} value="name-a-z">
             Paises de la A-Z
           </option>
           <option value="name-z-a">Paises de la Z-A</option>
-          <option value="population-+">Población de - a +</option>
-          <option value="population+-">Población de + a -</option>
         </select>
       </div>
     </div>

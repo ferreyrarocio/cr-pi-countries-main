@@ -17,6 +17,8 @@ const Navbar = ({ onSearch }) => {
 
   return (
     <div className={styles.navbar}>
+
+<div className={styles.nav}>
       <div className={styles.searchbar}>
         
         <input 
@@ -32,11 +34,22 @@ const Navbar = ({ onSearch }) => {
         </button>
         
       </div>
+
+      
+      <NavLink to="/">
+        <button className={styles.botonc}>cambiar de usuario</button>
+      </NavLink>
+      
+
+</div>
+
+      
 <div className={styles.boton}>
       <NavLink to="/form">
         <button className={styles.botonposta}>registrar una actividad</button>
       </NavLink>
       </div>
+
     </div>
   );
 };

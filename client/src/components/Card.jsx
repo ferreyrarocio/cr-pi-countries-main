@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Card.module.css";
 
-const Card = ({ id, name, flag, continents, population }) => {
+const Card = ({ id, name, flag, continents}) => {
   return (
     <div className={styles.container}>
       <div className={styles.carta}>
