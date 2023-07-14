@@ -56,11 +56,13 @@ const Landing = () => {
       </button>
       <ul>
         {perfiles.map((perfil) => (
+          <NavLink to="/home">
           <li key={perfil.nombre} className={style.text}>
             <div><img className={style.foto} src={perfil.foto} alt={perfil.nombre} />
             <h2 className={style.text}>{perfil.nombre}</h2></div>
             <button className={style.button} onClick={() => eliminarPerfil(perfil)}>Eliminar</button>
           </li>
+          </NavLink>
         ))}
       </ul>
 
