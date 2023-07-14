@@ -39,7 +39,7 @@ const Landing = () => {
         disfrutes al máximo!!
       </h3>
       <label className={style.texto2}> ....éxitosミ★ </label>
-      <button className={style.button}>Quien esta planeando las vacaciones?</button>
+      <button className={style.buttonu}>Quien esta planeando las vacaciones?</button>
       <NavLink to="/home">
       <img className={style.foto} src={rocio} alt=""/>
       <img className={style.foto} src={fede} alt=""/>
