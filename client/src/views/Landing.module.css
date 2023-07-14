@@ -96,7 +96,7 @@
 
 .buttonx{
   font-family: 'DK Lemon Yellow Sun', cursive;
-  font-size: 24px;
+  font-size: 20px;
   border: 2px, #af0c07;
   padding: 8px;
   cursor: pointer;
@@ -105,9 +105,13 @@
   cursor: pointer;
   border-radius: 5px;
   background-image: linear-gradient(315deg, #b30e26  0%,#e85939);
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .buttonx:hover{
   border: 3px solid rgb(40, 146, 152);
+}
+
+li{
+  color:black;
 }

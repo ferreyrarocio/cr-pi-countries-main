@@ -1,0 +1,13 @@
+.foto{
+    width:fit-content;
+    width: 200px;
+    height: 200px;
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 11px;
+    outline: none;
+    border: 1px solid white;
+    align-items: center;
+  }
+  

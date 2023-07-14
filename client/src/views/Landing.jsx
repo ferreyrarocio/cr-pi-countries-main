@@ -20,7 +20,7 @@ const Landing = () => {
   };
 
   const eliminarPerfil = (perfil) => {
-    const nuevosPerfiles = perfiles.filter((p) => p.nombre !== perfil.nombre);
+    const nuevosPerfiles = perfiles.filter((p) => p.foto !== perfil.foto);
     setPerfiles(nuevosPerfiles);
   };
 
@@ -34,12 +34,12 @@ const Landing = () => {
       <label className={style.title}>Bienvenido!</label>
       <h3 className={style.texto}>
         {" "}
-        Listo para tus vacaciones ideales? Presioná las banderas y accederás a
+        listo para tus vacaciones ideales? Presioná las banderas y accederás a
         datos importantes y a las actividades más recomendadas para que
         disfrutes al máximo!!
       </h3>
       <label className={style.texto2}> ....éxitosミ★ </label>
-      <button className={style.buttonu}>Quién esta planeando las vacaciones?</button>
+      <button className={style.buttonu}>quién esta planeando las vacaciones?</button>
       <NavLink to="/home">
       <img className={style.foto} src={rocio} alt=""/>
       <img className={style.foto} src={fede} alt=""/>
@@ -48,7 +48,7 @@ const Landing = () => {
       <img className={style.foto} src={pachu} alt=""/>
       </NavLink>
 
-      <button className={style.buttonu}>No estás entre las opciones? podés crear tu propio perfil! </button>
+      <button className={style.buttonu}>no estás entre las opciones? podés crear tu propio perfil! </button>
     
       <input type="file" onChange={handleFotoChange} />
       <button className={style.button} onClick={agregarPerfil}>
@@ -56,17 +56,15 @@ const Landing = () => {
       </button>
       <ul>
         {perfiles.map((perfil) => (
-          
-          <li key={perfil.nombre} className={style.text}>
+          //la etiqueta li es un punto
+          <li key={perfil.foto} className={style.text}>
             <NavLink to="/home">
-            <img className={style.foto} src={perfil.foto} alt={perfil.nombre} />
+            <img className={style.foto} src={perfil.foto} alt=""/>
             </NavLink>
-            <button className={style.buttonx} onClick={() => eliminarPerfil(perfil)}>Eliminar</button>
+            <button className={style.buttonx} onClick={() => eliminarPerfil(perfil)}>eliminar</button>
           </li>
-          
         ))}
       </ul>
-
     </div>
   );
 };
