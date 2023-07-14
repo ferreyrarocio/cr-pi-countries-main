@@ -13,9 +13,15 @@ const Landing = () => {
   const [perfiles, setPerfiles] = useState([]);
 
   const agregarPerfil = () => {
+  
       setPerfiles([...perfiles, {  foto: fotoPerfil }]);
       setFotoPerfil(null);
     
+  };
+
+  const eliminarPerfil = (perfil) => {
+    const nuevosPerfiles = perfiles.filter((p) => p.nombre !== perfil.nombre);
+    setPerfiles(nuevosPerfiles);
   };
 
   const handleFotoChange = (e) => {
@@ -50,12 +56,14 @@ const Landing = () => {
       </button>
       <ul>
         {perfiles.map((perfil) => (
-          <NavLink to="/home">
-          <li >
-            <div><img className={style.foto} src={perfil.foto} alt={perfil.nombre} />
-            <h2 className={style.text}>{perfil.nombre}</h2></div>
+          
+          <li key={perfil.nombre} className={style.text}>
+            <NavLink to="/home">
+            <img className={style.foto} src={perfil.foto} alt={perfil.nombre} />
+            </NavLink>
+            <button className={style.buttonx} onClick={() => eliminarPerfil(perfil)}>Eliminar</button>
           </li>
-          </NavLink>
+          
         ))}
       </ul>
 
