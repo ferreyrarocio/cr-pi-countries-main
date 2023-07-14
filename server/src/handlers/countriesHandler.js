@@ -4,9 +4,6 @@ const getAllCountries = async (req, res) => {
   try {
     const countriesApi = await getCountriesApi();
 
-    
-
-
     res.status(200).json(countriesApi);
   } catch (error) {
     res.status(500).send(error.message);

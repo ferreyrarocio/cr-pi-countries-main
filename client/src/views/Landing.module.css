@@ -1,44 +1,8 @@
-.title{
-  font-family: 'tequila', cursive;
-  font-size: 150px;
-  color: #E21818;
-  font-weight: lighter;
-  margin-bottom:0%;
-}
-
-.texto{
-  font-family: 'DK Lemon Yellow Sun', cursive;
-  font-weight: lighter;
-  color: #9e7d36fb ;
-  margin-top: 0em;
-  font-size:29px;
-  width: 800px;
-}
-.texto2{
-  font-family: 'Grayscale Signature', cursive;
-  font-size: 45px;
-  font-weight: bold;
-  color: #E21818;
-}
-
-.button{
-  font-family: 'DK Lemon Yellow Sun', cursive;
-  font-size: 54px;
-  color: rgb(11, 11, 11);
-  padding: 4px;
-  background-image: linear-gradient(315deg, #cb253e  0%, #fd1d1d 50%, #cd9d5a);
-  border: 2px outset #e42626;
-  border-radius: 8px;
-}
-
-.button:hover{
-  transform: scale(0.97);
-}
 .todo{
   align-items: center;
   justify-content:start;
   display: -webkit-inline-flex;
-  background-image: url('../src/assets/fondo.jpg') ;
+  /* background-image: url('../src/assets/fondo.jpg') ; */
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -47,5 +11,83 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.title{
+  font-family: 'tequila', cursive;
+  font-size: 150px;
+  color:   #07526f  ;
+  margin-right: 1em;;
+  margin-top: 10px;
+  margin-bottom:0%;
+}
+
+.texto{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  color: black ;
+  margin-top: 0em;
+  font-size:29px;
+  width: 800px;
+}
+.texto2{
+  font-family: 'Grayscale Signature', cursive;
+  font-size: 45px;
+  font-weight: bold;
+  color: #1698a2f1;
+}
+
+.foto{
+  width:fit-content;
+  width: 200px;
+  height: 200px;
+ margin-left: 0.5em;
+ margin-right: 0.5em;
+  margin-top: 0.5em;
+  border-radius: 11px;
+  outline: none;
+  border: 1px solid white;
+}
+
+.text{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-weight: lighter;
+  color: #cb253e ;
+  margin-top: 1em;
+  font-size:29px;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.button{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-size: 29px;
+  color: rgb(11, 11, 11);
+  padding: 4px;
+  background-image: linear-gradient(315deg, #2da2ac95  0%, #83ecd7 50%, #cd9d5a);
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.button:hover{
+  transform: scale(0.97);
+}
+
+
+.buttonu{
+  font-family: 'DK Lemon Yellow Sun', cursive;
+  font-size: 29px;
+  color: #042f32bf;
+  padding: 4px;
+  background-image: linear-gradient(315deg, #0dd2e478  0%, #1fb39582 50%, #659ba5);
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.buttonu:hover{
+  transform: scale(0.97);
 }

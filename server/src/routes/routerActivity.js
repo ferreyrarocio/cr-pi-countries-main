@@ -10,5 +10,4 @@ router.post('/',postActivity)
 router.get('/activitiesCountries', getActivitiesCountries )
 
 
-
 module.exports= router

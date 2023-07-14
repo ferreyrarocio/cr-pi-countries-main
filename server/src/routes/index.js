@@ -5,7 +5,7 @@ const routerActivity = require('./routerActivity')
 const router = Router();
 
 
-// ------------------------------- Aca van las dos rutas -------------------------------
+// -- acá van las dos rutas :) --
 
 router.use('/countries', routerCountry)
 router.use('/activities', routerActivity)
