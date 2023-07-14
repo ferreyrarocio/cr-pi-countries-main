@@ -109,10 +109,12 @@ const Filters = () => {
           <option value="All" disabled selected>
             Orden alfabetico:
           </option>
-          <option className={style.option} value="name-asc">Paises de la A-Z</option>
-          <option value="name-desc">Paises de la Z-A</option>
-          <option value="population-asc">Población de - a +</option>
-          <option value="population-desc">Población de + a -</option>
+          <option className={style.option} value="name-a-z">
+            Paises de la A-Z
+          </option>
+          <option value="name-z-a">Paises de la Z-A</option>
+          <option value="population-+">Población de - a +</option>
+          <option value="population+-">Población de + a -</option>
         </select>
       </div>
     </div>

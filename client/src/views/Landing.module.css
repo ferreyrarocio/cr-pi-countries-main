@@ -10,12 +10,11 @@
   font-family: 'DK Lemon Yellow Sun', cursive;
   font-weight: lighter;
   color: #9e7d36fb ;
+  margin-top: 0em;
   font-size:29px;
-  margin-top: 0%;
-  margin-left: 21em;
-  margin-right: 21em;
+  align-items: center;
   justify-content:center;
-  overflow: hidden;
+  width: 800px;
 }
 .texto2{
   font-family: 'Grayscale Signature', cursive;
@@ -38,7 +37,8 @@
   transform: scale(0.97);
 }
 .todo{
-  text-align:center;
+  align-items: center;
+  justify-content:start;
   display: -webkit-inline-flex;
   background-image: url('../src/assets/fondo.jpg') ;
   background-size: cover;

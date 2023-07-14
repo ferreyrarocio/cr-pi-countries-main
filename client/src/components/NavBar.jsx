@@ -9,8 +9,8 @@ const Navbar = ({ onSearch }) => {
     onSearch(searchQuery);
   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
       handleSearch();
     }
   };
@@ -22,7 +22,7 @@ const Navbar = ({ onSearch }) => {
         <input 
           type="text"
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={(event) => setSearchQuery(event.target.value)}
           onKeyPress={handleKeyPress}
           placeholder=" buscá tu país favorito..."
           className={styles.input}

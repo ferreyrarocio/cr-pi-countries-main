@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   min-width: 700px;
-  height: 100vh;
+  height: auto;
   background-size: cover;
   background-position: center;
-  
+  margin-top:2.5em;
+  margin-bottom:2em;
   align-items: center;
   justify-content: center;
 }

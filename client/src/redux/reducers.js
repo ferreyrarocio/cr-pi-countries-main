@@ -60,7 +60,6 @@ const reducer = (state = initialState, action) => {
         },
       };
     case FILTER_BY_ACTIVITY:
-
       return {
         ...state,
         filter: action.payload,
@@ -71,16 +70,16 @@ const reducer = (state = initialState, action) => {
       let sortedFilter = [...state.filter];
 
       switch (sortBy) {
-        case "name-asc":
+        case "name-a-z":
           sortedFilter.sort((a, b) => a.name.localeCompare(b.name));
           break;
-        case "name-desc":
+        case "name-z-a":
           sortedFilter.sort((a, b) => b.name.localeCompare(a.name));
           break;
-        case "population-asc":
+        case "population-+":
           sortedFilter.sort((a, b) => a.population - b.population);
           break;
-        case "population-desc":
+        case "population+-":
           sortedFilter.sort((a, b) => b.population - a.population);
           break;
         default:

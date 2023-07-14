@@ -20,7 +20,7 @@ const CreateActivityForm = () => {
     name: "",
     difficulty: 0,
     duration: 0,
-    season: "primavera",
+    season: "",
     countries: [],
   });
 
@@ -30,9 +30,9 @@ const CreateActivityForm = () => {
     duration: "",
   });
 
-  const handleInputChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    setValidationErrors({ ...validationErrors, [e.target.name]: "" });
+  const handleInputChange = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+    setValidationErrors({ ...validationErrors, [event.target.name]: "" });
   };
 
   useEffect(() => {
@@ -52,6 +52,9 @@ const CreateActivityForm = () => {
     const regex = /^[a-zA-Z\s]+$/;
     return regex.test(name);
   };
+
+
+  // validaciones form
 
   const validateForm = () => {
     let valid = true;
@@ -87,8 +90,10 @@ const CreateActivityForm = () => {
     return valid;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+// NO MANDAR EL FORMULARIO SI FALTAN DATOS!1!!
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
     if (validateForm()) {
       try {
@@ -103,7 +108,7 @@ const CreateActivityForm = () => {
             name: "",
             difficulty: 0,
             duration: 0,
-            season: "temporada:",
+            season: "",
             countries: [],
           });
           setValidationErrors({
