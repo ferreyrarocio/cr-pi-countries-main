@@ -31,9 +31,8 @@
   }
 
   .option:hover {
-    background-color: #c57960;
+    background-color: yellow;
   }
-
 
   .select:focus {
     background-color: #60c5c0;

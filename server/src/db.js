@@ -28,6 +28,7 @@ fs.readdirSync(path.join(__dirname, "/models"))
   .filter(
     (file) =>
       file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js"
+      // verifica si el nombre del archivo termina con ".js"
   )
   .forEach((file) => {
     modelDefiners.push(require(path.join(__dirname, "/models", file)));
@@ -51,6 +52,6 @@ Country.belongsToMany(Activity, { through: "ActivityCountries" });
 Activity.belongsToMany(Country, { through: "ActivityCountries" });
 
 module.exports = {
-  ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
-  conn: sequelize, // para importart la conexión { conn } = require('./db.js');
+  ...sequelize.models, // ahora puedo importar los modelos con destructuring: const { Product, User } = require('./db.js');
+  conn: sequelize, // para importar la conexión { conn } = require('./db.js');
 };

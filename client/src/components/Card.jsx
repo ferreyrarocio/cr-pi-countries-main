@@ -11,6 +11,7 @@ const Card = ({ id, name, flag, continents, population }) => {
         </Link>
         <h3>{continents}</h3>
       </div>
+
     </div>
   );
 };

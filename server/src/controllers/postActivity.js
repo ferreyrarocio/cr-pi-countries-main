@@ -6,7 +6,7 @@ const postActivity = async (req, res) => {
 
     // Verificar si la actividad ya existe
     if (!name || !difficulty || !duration || !season || !countries) {
-      return res.status(400).json("Faltan Datos");
+      return res.status(400).json("por favor completá todos los campos");
     }
     const existingActivity = await Activity.findOne({
       where: {
@@ -23,7 +23,7 @@ const postActivity = async (req, res) => {
       });
 
       if (existingCountries.length > 0) {
-        return res.status(400).json('Las relaciones de países ya existen para esta actividad');
+        return res.status(400).json('esta actividad ya está cargada en el sistema');
       }
       // Agregar las nuevas relaciones de países
       const newCountries = await Country.findAll({

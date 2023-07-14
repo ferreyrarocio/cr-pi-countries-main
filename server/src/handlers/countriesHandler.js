@@ -2,12 +2,12 @@ const {getCountriesApi} = require('../controllers/getCountries')
 
 const getAllCountries = async (req, res) => {
   try {
-    const countryApi = await getCountriesApi();
+    const countriesApi = await getCountriesApi();
 
     
 
 
-    res.status(200).json(countryApi);
+    res.status(200).json(countriesApi);
   } catch (error) {
     res.status(500).send(error.message);
   }
