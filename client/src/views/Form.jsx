@@ -8,14 +8,15 @@ import {
 import style from "./Form.module.css";
 import { Link, NavLink } from "react-router-dom";
 
-const CreateActivityForm = () => {
+const Form = () => {
   const dispatch = useDispatch();
   const countries = useSelector((state) => state.countries);
+//* para obtener la lista de países desde el estado global
 
   useEffect(() => {
     dispatch(getCountries());
   }, [dispatch]);
-
+//* estados iniciales del form
   const [form, setForm] = useState({
     name: "",
     difficulty: 0,
@@ -29,6 +30,7 @@ const CreateActivityForm = () => {
     difficulty: "",
     duration: "",
   });
+//* guarda los mensajes de error de validación para cada campo
 
   const handleInputChange = (event) => {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -43,7 +45,7 @@ const CreateActivityForm = () => {
     const selectedCountries = form.countries.includes(countryId)
       ? form.countries.filter((id) => id !== countryId)
       : [...form.countries, countryId];
-
+//* va actualizando el estado al des/seleccionar los paises donde se puede relaixzar la act
     setForm({ ...form, countries: selectedCountries });
     setValidationErrors({ ...validationErrors, countries: "" });
   };
@@ -256,4 +258,4 @@ const CreateActivityForm = () => {
   );
 };
 
-export default CreateActivityForm;
+export default Form;

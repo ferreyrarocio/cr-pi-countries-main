@@ -13,10 +13,8 @@ const Landing = () => {
   const [perfiles, setPerfiles] = useState([]);
 
   const agregarPerfil = () => {
-  
       setPerfiles([...perfiles, {  foto: fotoPerfil }]);
       setFotoPerfil(null);
-    
   };
 
   const eliminarPerfil = (perfil) => {
@@ -69,3 +67,11 @@ const Landing = () => {
   );
 };
 export default Landing;
+
+//! esto es una farsa porque no está configurado, los supuestos perfiles no están guardados 
+//! en el el estado y menos el perfil nuevo que se borra al actualizar la página jsjds, 
+//! pero hablando en terminos de marketing funciona porque los hice sentir incorporados 
+//! dándoles la opción de crear su propio perfil y asi me compran viajes hasta q se dan cuenta 
+//! q no les cree ningun perfil... me compran viajes VISTE yo ya pienso q es una pagina d verdad 
+//! yo no vendo viajes es una tarea y en ningun lado dice q sea para vender viajes me lo invente yo...
+//!  anyways quiero arreglar esto y agregar los favoritos pero no se si me va a dar tiempo capaz rompa todo

@@ -21,7 +21,7 @@ export const getCountries = () => {
 
       dispatch({ type: GET_COUNTRIES, payload: countries });
     } catch (error) {
-      console.log("ENTRA ACA", error);
+      console.log( error);
     }
   };
 };
@@ -36,7 +36,7 @@ export const searchCountries = (name) => {
 
       dispatch({ type: SEARCH_COUNTRIES, payload: countries });
     } catch (error) {
-      alert("Pais no encontrado");
+      alert("el pais no fue encontrado, probá de nuevo!");
     }
   };
 };
@@ -49,7 +49,7 @@ export const getActivities = () => {
 
       dispatch({ type: GET_ACTIVITIES, payload: activities });
     } catch (error) {
-      console.log("Error al obtener las actividades", error);
+      console.log("ocurrió un error al obtener las actividades", error);
     }
   };
 };
@@ -67,7 +67,7 @@ export const createActivity = (form) => {
       // Dispatch de la acción para agregar la actividad creada al estado
       dispatch({ type: CREATE_ACTIVITY, payload: createdActivity });
     } catch (error) {
-      console.log("Error al crear la actividad", error);
+      console.log("no es posible crear la actividad", error);
     }
   };
 };
@@ -103,7 +103,7 @@ export const filterByActivity = (activityId, filter, countries) => {
       dispatch({ type: FILTER_BY_ACTIVITY, payload: countriesFilter });
     } catch (error) {
       console.log(
-        "Error al obtener los países asociados a la actividad",
+        "error al obtener los países asociados a la actividad",
         error
       );
     }

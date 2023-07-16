@@ -1,6 +1,6 @@
 import style from "./Detail.module.css";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom"; //* importstn p obtener los parámetros de la URL
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -8,8 +8,9 @@ const Detail = () => {
   const { id } = useParams();
 
   const [countryDetail, setCountryDetail] = useState([]);
+//* para almacenar la información del país obtenida de la solicitud.
 
-  useEffect(() => {
+  useEffect(() => { //*para realizar la solicitud a la API con la ayuda de axios :)
     axios(`countries/${id}`).then(({ data }) => {
       data.name
         ? setCountryDetail(data)

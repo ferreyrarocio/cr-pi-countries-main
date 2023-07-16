@@ -6,6 +6,7 @@ import {
   sortAction,
   trackFiltersActivities,
   trackFiltersSort,
+  trackFiltersContinents
 } from "../redux/actions";
 import style from "./Filters.module.css";
 import React from "react";
@@ -25,10 +26,15 @@ const Filters = () => {
       if (filters.activity) {
         await dispatch(filterByActivity(filters.activity, filter, countries));
       }
+//* verifica si hay un filtro de actividad activo.si es así, se llama a la acción :)
 
       await dispatch(sortAction(filters.sort));
+//* lo ordeno alfabeticam o por habitantes jeje
+
       await dispatch(filterByContinent(event.target.value));
+      dispatch(trackFiltersContinents(event.target.value));
       console.log(filter);
+//* llamo a la acción según el continente q seleccioné
     } catch (error) {
       console.log("Error al filtrar", error);
     }
@@ -37,9 +43,11 @@ const Filters = () => {
   const handleFilterActivities = async (event) => {
     try {
       if (event.target.value === "") {
+//* esta es la opcion de "todas las actividades"
         await dispatch(getCountries());
         await dispatch(filterByContinent(filters.continent));
         dispatch(trackFiltersActivities(""));
+//* importante!! para almacenar el ID de la actividad seleccionada en el estado
       } else {
         const activityId = event.target.value;
 
@@ -63,7 +71,7 @@ const Filters = () => {
     await dispatch(trackFiltersSort(event.target.value));
 
     if (sortByValue === "") {
-      // Limpiar el orden
+//* son las opciones por defecto (limpiar el orden)
       await dispatch(getCountries());
       await dispatch(filterByContinent(filters.continent));
     } else {
